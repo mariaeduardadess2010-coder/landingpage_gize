@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Gizé | Descubra o Egito Antigo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontes Elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR FIXA ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">𓂀</span>
+                <span class="logo-text">Gizé</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#historia" class="nav-link">História</a></li>
+                <li><a href="#pontos-turisticos" class="nav-link">Pontos Turísticos</a></li>
+                <li><a href="#gastronomia" class="nav-link">Gastronomia</a></li>
+                <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                <li><a href="#hospedagem" class="nav-link">Hospedagem</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Descubra Gizé</h1>
+            <p class="hero-subtitle">Uma jornada pela história do Egito Antigo</p>
+            <button class="btn-primary" id="ctaHeroBtn">Planeje sua Viagem</button>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Role para explorar</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO HISTÓRIA ==================== -->
+    <section id="historia" class="section historia fade-in">
+        <div class="container">
+            <div class="historia-grid">
+                <div class="historia-texto">
+                    <span class="section-tag">Legado Milenar</span>
+                    <h2 class="section-title">A História de Gizé</h2>
+                    <p class="historia-descricao">
+                        Gizé, a joia do Egito Antigo, abriga as mais impressionantes maravilhas da humanidade. 
+                        Localizada na margem oeste do Rio Nilo, esta cidade histórica foi o centro do poder 
+                        faraônico durante a Quarta Dinastia (c. 2613-2494 a.C.). As majestosas Pirâmides, 
+                        construídas como tumbas eternas para os faraós Quéops, Quéfren e Miquerinos, 
+                        representam a engenhosidade e a devoção do povo egípcio.
+                    </p>
+                    <p class="historia-descricao">
+                        A Grande Esfinge, com corpo de leão e cabeça humana, guarda este complexo funerário 
+                        há mais de 4.500 anos. Gizé não é apenas um sítio arqueológico; é um testemunho vivo 
+                        da capacidade humana de criar monumentos que transcendem o tempo, inspirando viajantes, 
+                        historiadores e sonhadores de todas as épocas.
+                    </p>
+                    <div class="historia-info">
+                        <div class="info-item">
+                            <i class="fas fa-pyramid"></i>
+                            <span>4.500+ anos de história</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-landmark"></i>
+                            <span>Patrimônio Mundial da UNESCO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="historia-imagem">
+                    <img src="images/historia-gize.jpg" alt="Imagem histórica de Gizé" onerror="this.src='https://via.placeholder.com/600x800?text=História+de+Gizé'">
+                    <div class="imagem-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO PONTOS TURÍSTICOS ==================== -->
+    <section id="pontos-turisticos" class="section pontos-turisticos fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Maravilhas do Mundo Antigo</span>
+                <h2 class="section-title">Pontos Turísticos</h2>
+                <p class="section-subtitle">Monumentos que desafiaram o tempo</p>
+            </div>
+            <div class="cards-grid" id="cardsGrid">
+                <!-- Cards serão inseridos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO GASTRONOMIA ==================== -->
+    <section id="gastronomia" class="section gastronomia fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sabores do Egito</span>
+                <h2 class="section-title">Gastronomia Local</h2>
+                <p class="section-subtitle">Uma viagem pelos sentidos</p>
+            </div>
+            <div class="gastronomia-grid" id="gastronomiaGrid">
+                <!-- Conteúdo via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO EVENTOS ==================== -->
+    <section id="eventos" class="section eventos fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Calendário Cultural</span>
+                <h2 class="section-title">Eventos Imperdíveis</h2>
+                <p class="section-subtitle">Viva experiências únicas em Gizé</p>
+            </div>
+            <div class="eventos-container" id="eventosContainer">
+                <!-- Eventos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO HOSPEDAGEM ==================== -->
+    <section id="hospedagem" class="section hospedagem fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Acomodações</span>
+                <h2 class="section-title">Hospedagem em Gizé</h2>
+                <p class="section-subtitle">Encontre o lugar perfeito para sua estadia</p>
+            </div>
+            <div class="hospedagem-grid" id="hospedagemGrid">
+                <!-- Cards via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALERIA ==================== -->
+    <section id="galeria" class="section galeria fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Memórias Visuais</span>
+                <h2 class="section-title">Galeria de Fotos</h2>
+                <p class="section-subtitle">Inspire-se com imagens deslumbrantes</p>
+            </div>
+            <div class="galeria-grid" id="galeriaGrid">
+                <!-- Galeria via JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightboxImg">
+            <div id="caption"></div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO LOCALIZAÇÃO (MAPA) ==================== -->
+    <section id="localizacao" class="section localizacao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Onde Fica</span>
+                <h2 class="section-title">Localização de Gizé</h2>
+                <p class="section-subtitle">A apenas alguns quilômetros do Cairo, às margens do Rio Nilo</p>
+            </div>
+            
+            <!-- MAPA DO GOOGLE MAPS -->
+            <div class="mapa-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.6033945967!2d31.131507672267487!3d29.97730522303838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584f7c8c2e2a2b%3A0x7b5c6e8f9a3b2c1d!2sGiza%2C%20Egito!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+            <!-- CARDS INFORMATIVOS -->
+            <div class="localizacao-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Localização Privilegiada</h3>
+                    <p>Gizé está localizada na margem oeste do Rio Nilo, a apenas 20 km do centro do Cairo.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Melhor Época para Visitar</h3>
+                    <p>Outubro a abril - temperaturas agradáveis e clima perfeito para explorar as pirâmides.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Como Chegar</h3>
+                    <p>Voo internacional para o Cairo (CAI) + 30 minutos de carro até Gizé.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="cta-final">
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+            <h2>Pronto para explorar Gizé?</h2>
+            <button class="btn-primary btn-large" id="ctaFinalBtn">Converse com um especialista</button>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo-footer">
+                        <span class="logo-icon">𓂀</span>
+                        <span class="logo-text">Gizé</span>
+                    </div>
+                    <p>Descubra as maravilhas do Egito Antigo e viva uma experiência inesquecível em Gizé.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#historia">História</a></li>
+                        <li><a href="#pontos-turisticos">Pontos Turísticos</a></li>
+                        <li><a href="#gastronomia">Gastronomia</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#hospedagem">Hospedagem</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +55 11 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@gize.travel</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Gizé, Egito</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gizé Turismo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
